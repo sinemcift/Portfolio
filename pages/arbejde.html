@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>arbejde</title>
+<link rel="stylesheet" href="../styles/stylesheet.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+</head>
+
+<body>
+		<!------------------------------  NAVIGATION BAR START  ------------------------------>
+	<div class="header">		
+		<div class="nav-bar" id="nav">
+			<a href="../index.html">Hjem</a>
+			<a href="#"><strong>Arbejde</strong></a>
+			<a href="laering.html">Læring</a>
+			<a href="om_mig.html">Om</a>
+			<a href="kontakt.html">Kontakt</a>
+		</div>
+	</div>	
+		<!------------------------------  NAVIGATION BAR END  ------------------------------>
+	
+			
+
+			<!-------------------- ARBEJDE TITEL -------------------->
+<div class="titel_arbejde"><h1>Arbejde</h1></div>
+<div class="arbejde_uo "><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, eum.<br>Lorem ipsum dolor sit amet, consectetur.</p></div>
+
+	
+			<!-------------------- ARBEJDE GALLERY START -------------------->	
+<div class="flex-container">
+	<div><a href="projekter/droem_din_portfolio.html"><img class="img" src="../images/drømport.jpg" alt="#"></a></div> 
+	<!-- -->
+	<div><a href="#"><img class="img" src="../images/bygport.jpg" alt=""></a></div> <!--  -->
+	<div><a href="#"><img class="img" src="../images/bygport2.jpg" alt=""></a></div> <!--  -->
+	<div><a href="#"><img class="img" src="../images/drøm-03.jpg" alt=""></a></div> <!--  -->
+	<div><a href="#"><img class="img" src="../images/drøm-gif.gif" alt=""></a></div> <!--  -->
+	<div><a href="#"><img class="img" src="../images/gif_banana.gif" alt=""></a></div> <!--  -->
+</div>
+			<!--------------------- ARBEJDE GALLERY END --------------------->
+
+	
+	
+	
+	
+			<!------------------------ FOOTER START ------------------------>	
+<footer>
+	<div class="copyright">
+		<h5>Sinem Cift © 2018 | All Rights Reserved</h5>
+	</div>
+	<div class="social_footer_icon">
+		<ul class="simple_menu_footer">
+			<li><a href=" link til sociale medie"><i></i></a></li>
+		</ul>
+	</div>
+</footer>
+			<!------------------------ FOOTER END ------------------------>	
+
+	
+
+<!-- JAVASCRIPT HERE-->
+<script type="text/javascript">
+	
+		// SCRIPT TIL NAVIGATIONS 
+	var nav = document.getElementById('nav');
+	
+	window.onscroll = function(){
+		 if (window.pageYOffset >50){
+			 
+			 nav.style.background = "hsla(0,0%,100%,0.95)"; //Farven på boxen under nav linjen //
+			 nav.style.boxShadow = "0px 1px 10px hsla(0,0%,58%,1.00)" // Shadow på nav boxen //
+		 }
+		 else{
+			 nav.style.background = "transparent" //farve på boxen under nav linjen står der IKKE når der bliver scrolled ned ad//
+			 nav.style.boxShadow = "none" //shadow på nav boxen er der ikke hvis IKKE der bliver scrooled ned ad //
+		 }
+	 }
+</script>	
+</body>
+</html>

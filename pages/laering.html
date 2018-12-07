@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>laering</title>
+<link rel="stylesheet" href="../styles/stylesheet.css">
+<link href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,600,600i,700" rel="stylesheet"> <!--BODY TYPEFACE-->
+</head>
+
+<body>
+	<div class="header">		<!--  NAVIGATION BAR START  -->
+		<div class="nav-bar" id="nav">
+			<a href="../index.html">Hjem</a>
+			<a href="arbejde.html">Arbejde</a>
+			<a href="#"><strong>Læring</strong></a>
+			<a href="om_mig.html">Om</a>
+			<a href="kontakt.html">Kontakt</a>
+		</div>
+	</div>		<!--  NAVIGATION BAR END  -->	
+	
+	<!---------------------------------  LEARNING CONTENT START  --------------------------------->
+	<div class="titel_learning">
+		<h1>Læring</h1>
+	</div>
+	<div class="learning_uo ">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, eum.<br>Lorem ipsum dolor sit amet, consectetur.</p>
+	</div>
+	<hr>
+	<div class="learning_content">
+		<h1>FLOW 1</h1>
+		<h4>Dato:</h4>
+		<hr>
+		
+		<table class="container_txt_pro">
+			<tbody class="body_txt_pro">
+
+				<tr class="first-row">
+					<td>
+						<a href="#" target="_blank">
+							<button>Opgavebeskrivelse</button>
+						</a>
+					</td>
+					<td></td>
+				</tr>
+
+				<tr class="second-row">
+					<td><p>Orginale opgave</p></td>
+					<td><p>Remake</p></td>
+				</tr>
+				<tr class="third-row">
+					<td>
+					<a href="#" target="_blank">
+							<button>Rapport</button>
+						</a>
+					</td>
+				</tr>
+
+				<tr class="third-row"> 
+					<td class="col-1-2">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, dolor, hic unde ullam similique ducimus officiis nostrum ut minus quisquam vel nobis deserunt! Atque iure corrupti exercitationem. Labore quia omnis tenetur officia, commodi debitis quas. Eaque consequuntur veritatis culpa ea, impedit atque reiciendis dolorum, velit, dolor libero officia veniam, fuga.</p>
+					</td>
+					<td class="col-2-2">
+						<img src="../../images/icons/Xd_Icon.png" alt="Xd logo">
+						<img src="../../images/icons/Xd_Icon.png" alt="Xd logo">
+						<img src="../../images/icons/Xd_Icon.png" alt="Xd logo">
+						<img src="../../images/icons/Xd_Icon.png" alt="Xd logo">
+						<img src="../../images/icons/Xd_Icon.png" alt="Xd logo">
+						<img src="../../images/icons/Xd_Icon.png" alt="Xd logo">
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+	
+	</div>
+	
+	<!---------------------------------  LEARNING CONTENT END  --------------------------------->	
+
+
+	<!-- JAVASCRIPT HERE-->
+<script type="text/javascript">
+	
+	// SCRIPT TIL NAVIGATIONS 
+	var nav = document.getElementById('nav');
+	
+	window.onscroll = function(){
+		 if (window.pageYOffset >100){
+			 
+			 nav.style.background = "hsla(0,0%,100%,0.95)"; //Farven på boxen under nav linjen //
+			 nav.style.boxShadow = "0px 1px 10px hsla(0,0%,58%,1.00" // Shadow på nav boxen //
+		 }
+		 else{
+			 nav.style.background = "transparent" //farve på boxen under nav linjen står der IKKE når der bliver scrolled ned ad//
+			 nav.style.boxShadow = "none" //shadow på nav boxen er der ikke hvis IKKE der bliver scrooled ned ad //
+		 }
+	 }
+</script>	
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Index</title>
+<link rel="stylesheet" href="styles/stylesheet.css">
+</head>
+
+<body>
+	<div class="header">		<!--  NAVIGATION BAR START  -->
+	<!--	<a href="#" class="logo"><img src="!default/logo.svg" alt="logo"></a>--> 
+		<div class="nav-bar" id="nav">
+			<a href="#"><strong>Hjem</strong></a>
+			<a href="pages/arbejde.html">Arbejde</a>
+			<a href="pages/laering.html">Læring</a>
+			<a href="pages/om_mig.html">Om</a>
+			<a href="pages/kontakt.html">Kontakt</a>
+		</div>
+	</div>		<!--  NAVIGATION BAR END  -->		
+
+	
+<section class="hero">		<!-- HERO IMAGE START -->
+	<div class="hero-inner">
+	<h1>Sinem Cift</h1>
+	<h2>Creativity shown on different platforms and study life</h2>
+	<a href="pages/arbejde.html" class="btn">Arbejde</a>
+	</div>
+</section>					<!-- HERO IMAGE END -->
+
+		<!-- CONTENT BOX START -->
+<div class="box"></div>	
+		<!-- CONTENT BOX END -->
+	
+<script type="text/javascript">			//  JAVASCRIPT TIL NAVIGATIONS LINJE DESKTOP //
+	
+	var nav = document.getElementById('nav');
+	
+	window.onscroll = function(){
+		 if (window.pageYOffset >40){  //Tallet 40 indikere hvor meget man skal rulle ned før at boxen dukker op//
+			 
+			 nav.style.background = "hsla(0,0%,100%,0.95)"; //Farven på boxen under nav linjen //
+			 nav.style.boxShadow = "0px 1px 10px hsla(0,0%,58%,1.00)" // Shadow på nav boxen //
+		 }
+		 else{
+			 nav.style.background = "transparent" //The color of the nav box, will NOT appear if one doesn't scroll down the page//
+			 nav.style.boxShadow = "none" //shadow under the nav box wont appear if one doesn't scroll down the page//
+		 }
+	 }
+</script>	
+
+</body>
+</html>
