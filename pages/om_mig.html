@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>om_mig</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sinem Cift | Om mig</title>
 <link rel="stylesheet" href="../styles/stylesheet.css">
 	
 </head>
@@ -10,14 +11,19 @@
 <body>
 	<div class="header"><!--  NAVIGATION BAR START  -->
 		<div class="nav-bar" id="nav">
-			<a href="../index.html">Hjem</a>
-			<a href="arbejde.html">Arbejde</a>
-			<a href="laering.html">Læring</a>
-			<a href="#"><strong>Om</strong></a>
-			<a href="kontakt.html">Kontakt</a>
+			<a href="../index.html"><span>Hjem</span></a>
+			<a href="arbejde.html"><span>Arbejde</span></a>
+			<a href="laering.html"><span>Læring</span></a>
+			<a href="#" class="current"><span>Om</span></a>
+			<a href="kontakt.html"><span>Kontakt</span></a>
 		</div>
 	</div>		<!--  NAVIGATION BAR END  -->	
 
+	<section class="hero_om">
+		<div>
+<!--			<h1>HVEM ER SINEM CIFT?</h1>-->
+		</div>
+	</section>		<!-- HERO IMAGE START & END -->
 	
 	<!----------------------------------- TIMELINE START ----------------------------------->	
 <div class="box">				
@@ -25,8 +31,8 @@
 		<ul>
 			<li time-list>
 				<div class="content">
-					<h3>Current edu cation</h3>
-					<p>Started at Copenhagen Business Academy.<br><strong>Major:</strong>Multimedia designer.</p>
+					<h3>Nuværende uddannelse</h3>
+					<p>Startede på Copenhagen Business Academy.<br><strong>Studie: </strong>Multimedie designer.</p>
 				</div>
 				<div class="time">
 					<h4>August 2018</h4>
@@ -34,8 +40,8 @@
 			</li>
 			<li time-list>
 				<div class="content">
-					<h3>University</h3>
-					<p>Started at Metropol.<br><strong>Major: </strong>Education.</p>
+					<h3>Universitet</h3>
+					<p>Started på Metropol.<br><strong>Studie: </strong>Education.</p>
 				</div>
 				<div class="time">
 					<h4>August 2017</h4>
@@ -43,8 +49,8 @@
 			</li>
 			<li time-list>
 				<div class="content">
-					<h3>Course</h3>
-					<p>Started at Ewha Womans University Language Center.<br><strong>Major: </strong>Korean.</p>
+					<h3>Sprog skole</h3>
+					<p>Startede på Ewha Womans University Language Center.<br><strong>Studie: </strong>Koreansk.</p>
 				</div>
 				<div class="time">
 					<h4>2016 - 2017</h4>
@@ -52,8 +58,8 @@
 			</li>
 			<li time-list>
 				<div class="content">
-					<h3>Collage/Course</h3>
-					<p>Started at Den Skandinaviske Design Højskole.<br><strong>Major: </strong>Graphic Design.</p>
+					<h3>Højskole</h3>
+					<p>Studerede på Den Skandinaviske Design Højskole.<br><strong>Studie: </strong>Grafisk design.</p>
 				</div>
 				<div class="time">
 					<h4>2015</h4>
@@ -61,8 +67,8 @@
 			</li>
 			<li time-list>
 				<div class="content">
-					<h3>High School</h3>
-					<p>Student at CPH West HTX - Ishøj, Denmark.<br><strong>Major: </strong>Communication/it & Design.</p>
+					<h3>Gymnasie</h3>
+					<p>Elev på CPH West HTX - Ishøj, Denmark.<br><strong>Studie: </strong>Kommunikation/it & Design</p>
 				</div>
 				<div class="time">
 					<h4>2011 - 2014</h4>
@@ -70,8 +76,8 @@
 			</li>
 			<li time-list>
 				<div class="content">
-					<h3>Public school</h3>
-					<p>Student at Tjørnelyskole (public school).<br><strong>Major: </strong>-</p>
+					<h3>Folkeskole</h3>
+					<p>Elev på Tjørnelyskole - Hundige, Danmark.<br><strong>Studie: </strong>-</p>
 				</div>
 				<div class="time">
 					<h4>2001 - 2011</h4>
@@ -79,8 +85,8 @@
 			</li>
 			<li time-list>
 				<div class="content">
-					<h3>Entered the universe</h3>
-					<p>Born 21st April 1995 in Denmark.</p>
+					<h3>Kom til Verdnen</h3>
+					<p>Født 21. April 1995 i Denmark.</p>
 				</div>
 				<div class="time">
 					<h4>1995</h4>
@@ -91,31 +97,43 @@
 	</div>
 </div> 
 	<!----------------------------------- TIMELINE END ----------------------------------->
+		<!-- SCROLL TO TOP BUTTON -->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">TIL TOP &uarr;</button>
 	
 	
 			<!------------------------ FOOTER START ------------------------>	
-<!--<footer>
-	<div><h5>Sinem Cift © 2018 | All Rights Reserved</h5></div>
-</footer>-->
+<footer>
+	<div class="copyright">
+		<h5><span id="sinem-cift">Sinem Cift</span> © 2018 | All Rights Reserved</h5>
+	</div>
+</footer>
 			<!------------------------ FOOTER END ------------------------>		
 	
 	
 <script type="text/javascript">
 	
-		// SCRIPT TIL NAVIGATIONS 
-	var nav = document.getElementById('nav');
-	
-	window.onscroll = function(){
-		 if (window.pageYOffset >100){
-			 
-			 nav.style.background = "hsla(0,0%,100%,0.95)"; //Farven på boxen under nav linjen //
-			 nav.style.boxShadow = "0px 1px 10px hsla(0,0%,58%,1.00)" // Shadow på nav boxen //
-		 }
-		 else{
-			 nav.style.background = "transparent" //farve på boxen under nav linjen står der IKKE når der bliver scrolled ned ad//
-			 nav.style.boxShadow = "none" //shadow på nav boxen er der ikke hvis IKKE der bliver scrooled ned ad //
-		 }
+// SCRIPT TIL NAVIGATIONS 
+var nav = document.getElementById('nav');
+
+window.onscroll = function(){
+	 if (window.pageYOffset >40){
+
+		 nav.style.background = "hsla(0,0%,100%,0.95)"; //Farven på boxen under nav linjen //
+		 nav.style.boxShadow = "0px 1px 10px hsla(0,0%,58%,1.00)" // Shadow på nav boxen //
 	 }
+	 else{
+		 nav.style.background = "transparent" //farve på boxen under nav linjen står der IKKE når der bliver scrolled ned ad//
+		 nav.style.boxShadow = "none" //shadow på nav boxen er der ikke hvis IKKE der bliver scrooled ned ad //
+	 }
+ }
+
+//SCROLL TO TOP BUTTON
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 </script>
 </body>
 </html>

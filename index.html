@@ -2,35 +2,99 @@
 <html lang="da">
 <head>
 <meta charset="utf-8">
-<title>Index</title>
+<meta name="author" content="Sinem Cift">
+<meta name="keywords" content="Sinem Cift, grafisk designer, grafisk, designer, studerende, graphic designer, graphic, design, coding, student, portfolio,">
+<title>Sinem Cift | Portfolio</title>
 <link rel="stylesheet" href="styles/stylesheet.css">
 </head>
 
 <body>
 	<div class="header">		<!--  NAVIGATION BAR START  -->
-	<!--	<a href="#" class="logo"><img src="!default/logo.svg" alt="logo"></a>--> 
 		<div class="nav-bar" id="nav">
-			<a href="#"><strong>Hjem</strong></a>
-			<a href="pages/arbejde.html">Arbejde</a>
-			<a href="pages/laering.html">Læring</a>
-			<a href="pages/om_mig.html">Om</a>
-			<a href="pages/kontakt.html">Kontakt</a>
+			<a href="#" class="current"><span>Hjem</span></a>
+			<a href="pages/arbejde.html"><span>Arbejde</span></a>
+			<a href="pages/laering.html"><span>Læring</span></a>
+			<a href="pages/om_mig.html"><span>Om</span></a>
+			<a href="pages/kontakt.html"><span>Kontakt</span></a>
 		</div>
 	</div>		<!--  NAVIGATION BAR END  -->		
 
 	
 <section class="hero">		<!-- HERO IMAGE START -->
-	<div class="hero-inner">
-	<h1>Sinem Cift</h1>
-	<h2>Creativity shown on different platforms and study life</h2>
-	<a href="pages/arbejde.html" class="btn">Arbejde</a>
+	<div>
+		<h1>Sinem Cift</h1>
+		<h2>Creativity shown on different platforms and study life</h2>
 	</div>
 </section>					<!-- HERO IMAGE END -->
 
-		<!-- CONTENT BOX START -->
-<div class="box"></div>	
-		<!-- CONTENT BOX END -->
+
+							<!-- INDEX CONTENT START -->
+
+<div class="index-title">
+	<h1>Kompentencer</h1>
+</div>	
 	
+<div class="flex-index-container">
+	<div class="flex-index-item">
+		<img src="images/coding-03.svg" alt="#">
+		<h4>Programering</h4>
+		<p></p>
+	</div>
+	<div class="flex-index-item">
+		<img src="images/graphic_design-02.svg" alt="#">
+		<h4>Grafisk design</h4>
+		<p></p>
+	</div>
+	<div class="flex-index-item">
+		<img src="images/kompentencer-iconer-04.svg" alt="#">
+		<h4>Planlægning</h4>
+		<p></p>
+	</div>
+</div>
+	
+<style>
+	.flex-index-container{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row wrap;
+		justify-content: space-between;
+		height: auto;
+		margin-left: 5%;
+		margin-right: 5%;
+		width: 90%;
+	}
+	.flex-index-item {
+		flex-basis: 28%; /*bestemmer breden på flex-item*/
+		margin-top: 30px;
+		padding: 10px;
+		background: #f4f4f4;
+	}
+	.flex-index-item img {
+		width: 100%;
+	}
+	.flex-index-item h4, p {
+		padding-top: 15px;
+		color: #5e5e5e;
+		text-align: center;
+		width: 100%;
+	}
+	.flex-index-item p {
+		padding-bottom: 15px;
+	}
+
+</style>
+		<!-- INDEX CONTENT START -->
+	
+			<!------------------------ FOOTER START ------------------------>	
+<footer>
+	<div class="copyright">
+		<h5><span id="sinem-cift">Sinem Cift</span> © 2018 | All Rights Reserved</h5>
+	</div>
+</footer>
+			<!------------------------ FOOTER END ------------------------>	
+
+	
+	<!-- Java kommer her -->
 <script type="text/javascript">			//  JAVASCRIPT TIL NAVIGATIONS LINJE DESKTOP //
 	
 	var nav = document.getElementById('nav');

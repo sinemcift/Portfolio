@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>kontakt</title>
+<title>Sinem Cift | Kontakt</title>
 <link rel="stylesheet" href="../styles/stylesheet.css">
 <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
@@ -10,33 +10,56 @@
 <body>
 	<div class="header">		<!--  NAVIGATION BAR START  -->
 		<div class="nav-bar" id="nav">
-			<a href="../index.html">Hjem</a>
-			<a href="arbejde.html">Arbejde</a>
-			<a href="laering.html">Læring</a>
-			<a href="om_mig.html">Om</a>
-			<a href="#"><strong>Kontakt</strong></a>
+			<a href="../index.html"><span>Hjem</span></a>
+			<a href="arbejde.html"><span>Arbejde</span></a>
+			<a href="laering.html"><span>Læring</span></a>
+			<a href="om_mig.html"><span>Om</span></a>
+			<a href="#" class="current"><span>Kontakt</span></a>
 		</div>
 	</div>		<!--  NAVIGATION BAR END  -->	
 
-			<!--  CONTACT FORM START  -->
-<div class="content_header">
-	<h1>Kom i kontakt</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptates sequi dolor illum molestias eum numquam cupiditate architecto molestiae officia!</p>
-</div>	
+			
+<!--  CONTACT FORM START  -->
+	<div class="page_titel"><h1>Lad os komme i kontakt!</h1></div>
+	<div class="page_discribtion"><p>Udfyld nedstående formular. Jeg jeg vil hurtigst muligt besvare din hendvendelse.</p></div>
 	
-<div class="contact_form">
-	<form>
-		<input type="text" placeholder="Navn" />
-		<input type="text" placeholder="E-mail" />
-		<input type="text" id="bsk" placeholder="Besked" />
-	</form>
-	<button type="button">Send!</button>
-</div>
+	<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1591.8638962511045!2d12.510200095587257!3d55.77016929456292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46524e6d778cb02b%3A0x7e3ab7668df86d7c!2sCphbusiness+Lyngby!5e0!3m2!1sda!2sdk!4v1544625309811" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+	
+	<div class="contact_form">
+		<form>
+			<input type="text" placeholder="Dit navn:" />
+			<input type="text" placeholder="Din e-mail:" />
+			<input type="text" id="bsk" placeholder="Skriv din besked her:" />
+		</form>
+		<button type="button">Send!</button>
+	</div> <!--  CONTACT FORM END  -->
+			
+	
+			
+<footer> <!-- FOOTER START -->
+	<div class="copyright">
+		<h5><span id="sinem-cift">Sinem Cift</span> © 2018 | All Rights Reserved</h5>
+	</div>
+</footer> <!-- FOOTER END -->
 
-			<!--  CONTACT FORM END  -->
 	
-<section>
-	<div></div>	
-</section>
+<script type="text/javascript">
+	
+// SCRIPT TIL NAVIGATIONS 
+var nav = document.getElementById('nav');
+
+window.onscroll = function(){
+	if (window.pageYOffset >40){
+		nav.style.background = "hsla(0,0%,100%,0.95)"; //Farven på boxen under nav linjen //
+		nav.style.boxShadow = "0px 1px 10px hsla(0,0%,58%,1.00)" // Shadow på nav boxen //
+	}
+	else{
+		nav.style.background = "transparent" //farve på boxen under nav linjen står der IKKE når der bliver scrolled ned ad//
+		nav.style.boxShadow = "none" //shadow på nav boxen er der ikke hvis IKKE der bliver scrooled ned ad //
+	}
+}
+
+
+</script>
 </body>
 </html>
