@@ -138,6 +138,32 @@ h1, h2, h3, h4, h5, h6, p, span, a, button {
 
 	/* --------------------------------  PAGE TITEL END  --------------------------------*/
 
+	.flex-index-container{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row wrap;
+		justify-content: space-between;
+		height: auto;
+		margin-left: 5%;
+		margin-right: 5%;
+		width: 90%;
+	}
+	.flex-index-item {
+		flex-basis: 28%; /*bestemmer breden på flex-item*/
+		margin-top: 30px;
+		padding: 10px;
+		background: #f4f4f4;
+	}
+	.flex-index-item img {
+		width: 100%;
+	}
+	.flex-index-item h4 {
+		padding-top: 15px;
+		color: #5e5e5e;
+		text-align: center;
+		width: 100%;
+	}
+
 /*---------------------------------  ARBEJDE-GALLERY START  ---------------------------------*/
 .flex-container {
 	display: flex;
@@ -193,32 +219,6 @@ tbody {
 }
 
 /*INDHOLD PÅ SIDEN KOMMER HER*/
-.project_detail_container{
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row wrap;
-	justify-content: space-around;
-	height: auto;
-	margin: 40px 10% 0px 10%;
-	width: 80%;
-	padding-top: 30px;
-}
-.project_detail_item{
-	width: 33.33%
-}
-.project_detail_item img{
-	width: 45px;
-	height: auto;
-}
-.project_detail_item h4 {
-	padding-right: 15px;
-}
-.project_detail_bodytxt {
-	padding-right: 15px;
-	text-align: left;
-	color: #5e5e5e;
-}
-
 #myBtn {
 	position: fixed; 
 	bottom: 20px; 
@@ -250,17 +250,14 @@ tbody {
 /* Slideshow container */
 .slideshow-container {
 	width: 80%;
+	height: 70%;
 	position: relative;
 	margin: 40px auto;
-	/*margin-top: 40px;
-	margin-left: auto;
-	margin-right: auto;*/
-	
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+	display: none;
 }
 /* Next & previous buttons */
 .prev, .next {
@@ -458,19 +455,7 @@ tbody {
 	margin: 10px auto;
 }
 		/*FLOW 3 START*/
-	.app-prototype iframe{
-		width:25%;
-		padding-top: 14px;
-		padding-bottom: 10px;
-		height: 460px;
-		margin-left: 38.5%;
-		margin-right: 39%;
-	}	
-	.app-prototype {
-		background: #ff9b73;
-		width: 80%;
-		margin: 40px auto;
-	}
+
 		/*FLOW 3 END*/
 
 

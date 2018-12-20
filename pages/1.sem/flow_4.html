@@ -4,6 +4,11 @@
 <meta charset="utf-8">
 <title>Sinem Cift | Flow 4</title>
 <link rel="stylesheet" href="../../styles/stylesheet.css">
+<!-- Add jQuery library -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../../styles/source/jquery.fancybox.css" type="text/css" media="screen"/>
+<script src="../../styles/source/jquery.fancybox.pack.js"></script>
 </head>
 
 <body>
@@ -83,17 +88,20 @@
 
 <div class="col-container">
 	<div class="flex-item"> <!-- col 1 start -->
-	<h4 class="under_titler">Forhåndskendskab</h4>
-	<p></p>
-	<h4 class="under_titler">Beskrivelse</h4>
-	<p>I dette projekt arbejde jeg i gruppe med 2 andre medstuderende, vi valgte at fordele arbejdet mellem os. således at vi tog ansvar for et område vi hver især følte os stærkest i. Dette gjorde vi for at opnå bedst mulige resultat på den tid vi havde til at lave projektet i.</p>
-	<h4 class="under_titler">Feedback</h4>
-	<p>&#8226; Mangel på afsnit i teksten under 'om os'.</p>
-	<p>&#8226; Underviserne mente, at arbejdsfordellingen i gruppearbejdet var fordelt på en måde hvor vi ikke har udfordrede os selv nok, da vi alle havde arbejdet indenfor de arbejdesområder der var vores stærkeste.</p>
-	<h4 class="under_titler">Refleksion</h4>
-	<p>Projektet var udført generelt ret godt, så derfor har jeg kun ændret 'om os' siden hvor jeg har sat nogle &#60;br&#62; tags ind Det var ikke meget feedback </p>
-	<h4 class="under_titler">Remake</h4>
-	<p></p>
+		<h4 class="under_titler">Forhåndskendskab</h4>
+		<p></p>
+		<h4 class="under_titler">Beskrivelse</h4>
+		<p>I dette projekt arbejde jeg i gruppe med 2 andre medstuderende, vi valgte at fordele arbejdet mellem os. således at vi tog ansvar for et område vi hver især følte os stærkest i. Dette gjorde vi for at opnå bedst mulige resultat på projektet i den tid vi havde tilrådighed.<br><br>Sweetbot.design er et fiktivt webbureau vi skulle lave en hjemmeside til. Hjemmesiden skulle være responsiv, og skulle designes ud fra en styleguide. Udover dette skulle vi også udvikle en ecommerce, her valgt vi at lave en webshop pakke løsning. Udviklet og lavet i Adobe Xd som en prototype.</p>
+		<h4 class="under_titler">Feedback</h4>
+		<p>&#8226; Mangel på afsnit i teksten under 'om os'.</p>
+		<p>&#8226; Underviserne mente desuden, at arbejdsfordellingen i gruppearbejdet var fordelt på en 'sikker' måde, i og med, at vi lavede det vi var bedst til og ikke det vi var dårligst til for at udfordre os selv nok.</p>
+		<h4 class="under_titler">Remake/Rettelse</h4>
+		<p>Projektet var udført generelt ret godt, så derfor har jeg kun ændret 'om os' siden hvor jeg har sat nogle &#60;br&#62; tags ind for at skabe bedre læselighed og luft mellem afsniterne.</p>
+		<div>
+			<a class="fancybox" href="../../images/flow4-slide/foerefter.jpg">
+				<img class="fancy-box" src="../../images/flow4-slide/foerefter.jpg" alt="Rettelse af sweetbot.design">
+			</a>
+		</div>
 	</div> <!-- col 1 slut -->
 	
 	<div class="flex-item">  <!-- col 2 start -->
@@ -117,9 +125,9 @@
 		<img src="../../images/icons/ps_icon.png" alt="Adobe dimencions logo" class="program_icons">
 		<p></p>
 		<h4 class="under_titler">Relateret arbejde</h4>
-		<p></p>
-		<h4 class="under_titler">Rettelser</h4>
-		<p></p>
+		<a class="rel_opg" href="../projekter/fruit_gif.html"><p>Fruit Gif</p></a>
+		<h4 class="under_titler">Refleksion</h4>
+		<p>Jeg har fået indblik på god og flot kodning i mit gruppe arbejde i dette projekt, da gruppemarker, som er langt bedre til kodning end mig, fik vi altså et resultat som jeg aldrig selv ville kunne opnå. Vi gennemgik samlet alle i gruppen koden sammen så vi fik alt at vide, selv om vi ikke alle kodet det så lærte jeg selv en masse nye ting som jeg med sikkerhed ønsker at bruge til fremtidige projekter.<br><br>Jeg har desuden også udfordret mig selv grafisk i dette projekt, og eksperimenteret med at lave gif'er (Som dog ikke blev brugt til endelige aflevering, men er dog senere blevet brugt i <a class="inline-link" href="../projekter/fruit_gif.html">Fruit Gif</a> projektet, som jeg har lavet i min fritid efterfølgende.)</p>
 	</div> <!-- col 2 slut -->
 </div>
 
@@ -189,6 +197,11 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//FANCYBOX
+$(document).ready(function() {
+	$(".fancybox").fancybox();
+});
 </script>
 </body>
 </html>

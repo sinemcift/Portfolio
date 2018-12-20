@@ -4,7 +4,11 @@
 <meta charset="utf-8">
 <title>Sinem Cift | Flow 1</title>
 <link rel="stylesheet" href="../styles/stylesheet.css">
-<link href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,600,600i,700" rel="stylesheet"> <!--BODY TYPEFACE-->
+<!-- Add jQuery library -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../../styles/source/jquery.fancybox.css" type="text/css" media="screen"/>
+<script src="../../styles/source/jquery.fancybox.pack.js"></script>
 </head>
 
 <body>
@@ -100,6 +104,7 @@
 				<button>Rapport</button>
 			</a>
 			<a href="https://xd.adobe.com/view/607ba0e6-fe86-4c18-7ab0-5d3f327e6ba3-164a/?fullscreen" target="_blank" class="opg_bes_btn"><button>Online Version</button></a>
+			
 			<h4 class="under_titler">Lærringsmål:</h4>
 			<p>&#8226; Adobe Photoshop</p>
 			<p>&#8226; Adobe XD</p>
@@ -192,6 +197,10 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 	
+//FANCYBOX
+$(document).ready(function() {
+	$(".fancybox").fancybox();
+});
 </script>	
 </body>
 </html>
