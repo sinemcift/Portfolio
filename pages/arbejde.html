@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="da">
 <head>
 <meta charset="utf-8">
 <title>Sinem Cift | Arbejde</title>
@@ -8,8 +8,7 @@
 </head>
 
 <body>
-		<!------------------------------  NAVIGATION BAR START  ------------------------------>
-	<div class="header">		
+	<div class="header">		<!--  NAVIGATION BAR START  -->
 		<div class="nav-bar" id="nav">
 			<a href="../index.html"><span>Hjem</span></a>
 			<a href="#" class="current"><span>Arbejde</span></a>
@@ -17,18 +16,13 @@
 			<a href="om_mig.html"><span>Om</span></a>
 			<a href="kontakt.html"><span>Kontakt</span></a>
 		</div>
-	</div>	
-		<!------------------------------  NAVIGATION BAR END  ------------------------------>
+	</div>						<!--  NAVIGATION BAR END  -->
 	
-			
-
-			<!-------------------- ARBEJDE TITEL -------------------->
+			<!--  ARBEJDE TITEL/UNDERTITLE  -->
 <div class="page_titel"><h1>Arbejde</h1></div>
 <div class="page_discribtion"><p>En række  projekter lavet i min fritid og i samarbejde med min uddannelse som multimediedesigner.</p></div>
 
-	
-			<!-------------------- ARBEJDE GALLERY START -------------------->	
-<div class="flex-container">
+<div class="flex-container"> <!-- ARBEJDE GALLERY START -->	
 	<div> 
 		<a href="projekter/eksamensprojekt.html">
 			<img class="img" src="../images/thumbnail/eksamensprojekt-07.jpg" alt="projekt thumbnail">
@@ -69,40 +63,30 @@
 			<img class="img" src="../images/thumbnail/fruit_gif-08.jpg" alt="projekt thumbnail">
 		</a>
 	</div>
-</div>
-			<!--------------------- ARBEJDE GALLERY END --------------------->
-
+</div> <!-- ARBEJDE GALLERY END -->	
 	
-	
-	
-	
-			<!------------------------ FOOTER START ------------------------>	
-<footer>
+<footer> <!-- FOOTER START -->	
 	<div class="copyright">
 		<h5><span id="sinem-cift">Sinem Cift</span> © 2018 | All Rights Reserved</h5>
 	</div>
-</footer>
-			<!------------------------ FOOTER END ------------------------>	
-
-	
+</footer> <!-- FOOTER END -->		
 
 <!-- JAVASCRIPT HERE-->
-<script type="text/javascript">
+<script>
+// SCRIPT TIL NAVIGATIONS 
+var nav = document.getElementById('nav');
 	
-		// SCRIPT TIL NAVIGATIONS 
-	var nav = document.getElementById('nav');
-	
-	window.onscroll = function(){
-		 if (window.pageYOffset >50){
+window.onscroll = function(){
+	 if (window.pageYOffset >50){
 			 
-			 nav.style.background = "hsla(0,0%,100%,0.95)"; //Farven på boxen under nav linjen //
-			 nav.style.boxShadow = "0px 1px 10px hsla(0,0%,58%,1.00)" // Shadow på nav boxen //
-		 }
-		 else{
-			 nav.style.background = "transparent" //farve på boxen under nav linjen står der IKKE når der bliver scrolled ned ad//
-			 nav.style.boxShadow = "none" //shadow på nav boxen er der ikke hvis IKKE der bliver scrooled ned ad //
-		 }
+		 nav.style.background = "hsla(0,0%,100%,0.95)"; //Farven på boxen under nav linjen //
+		 nav.style.boxShadow = "0px 1px 10px hsla(0,0%,58%,1.00)" // Shadow på nav boxen //
 	 }
+	 else{
+		 nav.style.background = "transparent" //farve på boxen under nav linjen står der IKKE når der bliver scrolled ned ad//
+		 nav.style.boxShadow = "none" //shadow på nav boxen er der ikke hvis IKKE der bliver scrooled ned ad //
+	 }
+ }
 </script>	
 </body>
 </html>
